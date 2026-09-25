@@ -30,6 +30,11 @@ Nothing here is a commitment. These are the directions that seem worth investiga
 - **Punctuality history.** Not just "is it late today" but how this train behaves over time.
 - **Making waitlists understandable.** RLWL, GNWL, Tatkal and the rest are genuinely confusing. Explaining what the type means, and giving an honest sense of the odds, feels like real value.
 - **Window view prediction.** Combining sun position with seat and coach data to guess which side gets the view, and which side gets the glare.
+- **Delay probability by station.** Using historical running data to show how likely a train is to be late at each stop, the way Flighty does for flights.
+- **Loco and consist origin tracking.** Where did today's loco and rake come from? The train equivalent of tracking a plane's tail number to see its previous flight.
+- **Stop durations on long routes.** How long the train actually halts at each station, so you know whether there's time to step out.
+- **Onward connection times.** How much time you have between arriving and your next ground transport leg.
+- **Live signal state per track section.** A long shot. This data is probably not public, likely for safety reasons, but it came up and it's worth noting.
 
 ## Data sources under investigation
 
@@ -40,9 +45,10 @@ None of these are confirmed. Terms of use are still being checked, and that will
 - **Unofficial Indian Railways APIs.** Various ones exist. Reliability and terms vary a lot.
 - **Real Time Trains (UK).** Not a data source for India, but a strong reference for how to present this kind of information well.
 
-### Known gap
+### Known gaps
 
-Nothing out there reliably maps which locomotive is assigned to which train. That is one of the most interesting things a railfan would want, and right now there is no dependable source for it. Solving or working around this is an open question.
+- **Loco assignment.** Nothing out there reliably maps which locomotive is assigned to which train. That is one of the most interesting things a railfan would want, and right now there is no dependable source for it. Solving or working around this is an open question.
+- **PNR status.** There is no public official API for PNR status. The official routes are either captcha-gated or limited to large booking agents, and the big travel apps don't allow scraping in their terms. Details are in [`research/resource-audit.md`](research/resource-audit.md).
 
 ## Building in public
 

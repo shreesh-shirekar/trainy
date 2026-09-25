@@ -18,7 +18,7 @@ Not for daily commuters. Local and suburban commuter features (Mumbai suburban i
 
 ## Current status
 
-Research phase. There is no app code yet and no tech stack picked.
+Research phase, moving toward a first build. There is no app code yet. The app will be built in Flutter, and the first piece is a booking explainer that tells you what your ticket status actually means (spec in [`research/booking-explainer.md`](research/booking-explainer.md)).
 
 Right now the work is figuring out what data exists, what is reliable, and what is actually legal and practical to use. The `research/` folder is where those notes will live.
 

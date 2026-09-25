@@ -47,7 +47,7 @@ For a first version, only the two statuses really matter. Everything else adds c
 
 ## Open questions
 
-- **Stack.** Web, mobile, or both? This hasn't been decided, and it's the next thing blocking code.
+- **Stack.** Decided: Flutter. Which platforms to target first is still open.
 - **Real samples.** We need a few real IRCTC confirmation emails and SMSes (with personal details stripped) to write a parser against. What does the text actually look like for WL, RAC and CNF?
 - **Privacy.** PNRs and passenger details are personal. Could this run entirely on the device with nothing stored?
 - **RQWL and RSWL.** Sources are thin on these, so they need confirming with people who know, maybe from the IRFCA forum.
